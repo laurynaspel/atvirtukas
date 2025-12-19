@@ -70,11 +70,12 @@ body {
 }
 .lentele h2 {
     position: absolute;
-    top: 450px;
-    left: 130px;
+    top: 395px;
+    left: 75px;
     font-family: Arial, sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     color: white;
+    width: 250px;
 }
 .snow {
     position: absolute;
