@@ -86,6 +86,10 @@ body {
     opacity: 0.8;
     animation: snow 10s linear infinite;
 }
+audio{
+    margin: 20px auto;
+    display: block;
+}
 
 .snow:nth-child(2) { left: 20%; animation-duration: 12s; }
 .snow:nth-child(3) { left: 40%; animation-duration: 9s; }
