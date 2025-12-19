@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.card {
+    width: 761px;
+    height: 1035px;
+    margin: 100px auto;
+    perspective: 1500px;
+    position: relative;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 1.2s ease;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(../images/element-16.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(../images/element-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.lentele {
+    position: absolute;
+    top: 150px;
+    left: 90px;
+}
+
+.lentele img {
+    width: 580px;
+    height: 580px;
+}
+
+.lentele h1 {
+    position: absolute;
+    top: 280px;
+    left: 130px;
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+.lentele h2 {
+    position: absolute;
+    top: 450px;
+    left: 130px;
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+}
+.snow {
+    position: absolute;
+    top: -20px;
+    width: 8px;
+    height: 8px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: snow 10s linear infinite;
+}
+
+.snow:nth-child(2) { left: 20%; animation-duration: 12s; }
+.snow:nth-child(3) { left: 40%; animation-duration: 9s; }
+.snow:nth-child(4) { left: 60%; animation-duration: 11s; }
+.snow:nth-child(5) { left: 80%; animation-duration: 8s; }
+
+@keyframes snow {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(1100px);
+    }
+}
